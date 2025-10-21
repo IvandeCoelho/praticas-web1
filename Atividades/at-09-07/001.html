@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de R$ para US$</title>
+    <script src="001.js" defer></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            /* permite quebrar linha quando faltar espaço */
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            /* ocupa sempre a tela toda */
+            gap: 20px;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+
+        .container {
+            flex: 1 1 300px;
+            /* cresce, diminui, mas largura mínima = 300px */
+            max-width: 350px;
+            box-shadow: 0 0 4px 0 #000000;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background: white;
+        }
+
+        .container h1 {
+            text-align: center;
+            background-color: green;
+            border-radius: 8px;
+            color: #FFFFFF;
+            padding: 10px;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 12pt;
+            font-weight: bold;
+        }
+
+        form>div:last-child {
+            text-align: center;
+            font-weight: bolder;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 001 -->
+    <div class="container">
+        <h1>1 Conversor de R$ para US$</h1>
+        <form id="formCambio">
+            <label for="valorDolar">Dólar hoje US$: </label>
+            <input type="number" id="valorDolar" placeholder="Dólar hoje" step="0.01" min="0" required>
+            <label for="valorReais">Valor em R$: </label>
+            <input type="number" id="valorReais" placeholder="Valor em reais" min="0" required>
+            <input type="submit" value="Converter">
+            <div id="resultado"></div>
+        </form>
+    </div>
+
+    <!-- 002 -->
+    <div class="container">
+        <h1>2 Quadrado</h1>
+        <form id="formQuadrado">
+            <label for="numQuadrado">Número: </label>
+            <input type="number" id="numQuadrado" placeholder="Digite um número" required>
+            <input type="submit" value="Converter">
+            <div id="resultNumQuadrado"></div>
+        </form>
+    </div>
+
+    <!-- 003 -->
+    <div class="container">
+        <h1>3 Conversor Pol - cm</h1>
+        <form id="formPol">
+            <label for="numPolegadas">Polegadas: </label>
+            <input type="number" id="numPolegadas" placeholder="Polegadas" required>
+            <input type="submit" value="Converter">
+            <div id="resultCm"></div>
+        </form>
+    </div>
+
+    <!-- 004 -->
+    <div class="container">
+        <h1>4 Calcular Perímetro</h1>
+        <form id="formPerimetro">
+            <label for="numRaio">Raio: </label>
+            <input type="number" id="numRaio" placeholder="Raio" min="0" required>
+            <input type="submit" value="Converter">
+            <div id="resultPerimetro"></div>
+        </form>
+    </div>
+
+    <!-- 005 -->
+    <div class="container">
+        <h1>5 Calcular Salário</h1>
+        <form id="formSalarioProf">
+            <label for="horaAula">Hora aula: </label>
+            <input type="number" id="horaAula" placeholder="Hora Aula" min="0" step="0.01" required>
+            <label for="qntHoras">Horas trabalhadas: </label>
+            <input type="number" id="qntHoras" placeholder="Quantidade de horas" min="0" required>
+            <input type="submit" value="Calcular">
+            <div id="resultSalarioProf"></div>
+        </form>
+    </div>
+
+    <!-- 006 -->
+    <div class="container">
+        <h1>6 Media Aluno</h1>
+        <form id="formNotaAluno">
+            <label for="n1">Nota 1: </label>
+            <input type="number" id="n1" placeholder="Nota 1" min="0" required>
+            <label for="n2">Nota 2: </label>
+            <input type="number" id="n2" placeholder="Nota 2" min="0" required>
+            <input type="submit" value="Calcular" id="btnMediaAluno">
+            <div id="mediaAluno"></div>
+        </form>
+    </div>
+
+    <!-- 007 -->
+    <div class="container">
+        <h1>7 IMC</h1>
+        <form id="formImc">
+            <label for="peso">Peso: </label>
+            <input type="number" id="peso" placeholder="Peso kg" min="0" required>
+
+            <label for="altura">Altura: </label>
+            <input type="number" id="altura" placeholder="Altura m" step="0.01" min="0" required>
+
+            <input type="submit" value="Calcular" id="btnMediaAluno">
+
+            <div id="resultadoImc"></div>
+        </form>
+    </div>
+
+    
+    <!-- 009 -->
+    <div class="container">
+        <h1>9 Soma Intervalos</h1>
+        <form id="formIntervalo">
+            <label for="inicio">Valor inicio: </label>
+            <input type="number" id="inicio" placeholder="Valor Inicial" required>
+
+            <label for="fim">Valor final: </label>
+            <input type="number" id="fim" placeholder="Valor final" required>
+
+            <input type="submit" value="Calcular" id="btnIntervalo">
+
+            <div id="resultadoIntervalo"></div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

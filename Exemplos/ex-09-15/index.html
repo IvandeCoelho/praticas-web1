@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+        }
+        form{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, button {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <form id="form">
+
+        <label>
+            <span>Veiculo: </span>
+            <input type="text" name="veiculo" id="veiculo">
+        </label>
+        <label>
+            <span>Diaria: </span>
+            <input type="number" name="diaria" id="diaria"></label>
+        <label>
+            <span>Valor Fixo: </span>
+            <input type="number" step="0.01" name="input-fixo" id="input-fixo">
+        </label>
+        <label>
+            <span>Quantidade de Dias: </span>
+            <input type="number" name="input-dias" id="input-dias">
+        </label>
+        
+        <input type="submit" value="Calcular" id="btn-calcular">
+
+        <div id="saida">
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #484848;
+    color: #f6f6f6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.destaque {
+    display: flex;
+    justify-content: center;
+    & img {
+        width: 600px;
+    }
+}
+
+.miniaturas{
+    display: flex;
+    justify-content: space-between;
+
+    & img{
+        width: 20%;
+        filter: grayscale(1); 
+        transition: all 1s; 
+        &:hover{
+            cursor: pointer;
+            filter: grayscale(0);  
+        }
+    }
+}
+
+
+.ativa{
+    filter: grayscale(0) !important;
+}

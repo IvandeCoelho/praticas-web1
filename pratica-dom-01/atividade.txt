@@ -1,0 +1,34 @@
+Questão 01 - O que precisamos fazer para adicionar um script na seção <head> de uma página HTML e definir que ele só deve ser executado ao finalizar o carregamento da página?
+ - Precisamos adicionar a seguinte linha de comando: <script src="./index.js" defer></script> colocando o atributo defer para que a pagina so execute o script apos o seu carregamento total;
+
+
+Questão 02 - Considere os métodos de seleção de elementos do DOM (Document Object Model) em JavaScript listados abaixo. Relacione cada método à definição correta.
+
+I. document.getElementById()
+ - Retorna um único elemento do DOM com base no valor do atributo id.
+
+II. document.querySelector()
+ - Retorna o primeiro elemento do DOM que corresponde ao seletor CSS especificado.
+
+
+III. document.getElementsByTagName()
+ - Retorna todos os elementos do DOM que possuem o mesmo nome de tag especificado.
+
+
+Questão 03 - Qual método foi utilizado para adicionar a classe input-erro ao campo de entrada no trecho acima? O que é esse atributo classList ?
+ - Foi utilizado o metodo classList.add() para adicionar a classe input-erro, o classList é um método para adicionar ou remover classes, utilizando o .add(), .remove() ou .toggle()
+
+Questão 04 - O que o método createElement() faz e que informação ele precisa receber como argumento?
+ - O método .createElement(element)— criar um elemento HTML.
+
+
+Questão 05 - Em JavaScript, ao manipular elementos do DOM, os atributos innerText e innerHTML são frequentemente utilizados. Qual das alternativas abaixo descreve corretamente a diferença entre esses dois atributos?
+b — innerText retorna ou define apenas o texto visível ao usuário, enquanto innerHTML retorna ou define o conteúdo HTML do elemento, incluindo tags.
+
+
+Questão 06 - O evento de clique foi definido de que forma para os  elementos span e btnExcluir (qual atributo foi usado e o que precisamos passar para esse atributo)?
+ - Foi definido com o manipulador de evento; onclick.
+
+Questão 07 - Os manipuladores dos eventos de clique no botão de adicionar e pressionamento da tecla enter foram definidos de forma diferente agora, usando o método addEventListener() . Explique o funcionamento desse método e o que ele precisa receber como parâmetro.
+ - O método addEventListener() recebe o tipo de evento a ser monitorado e uma função que será executada quando o evento ocorrer.
+ Ex da sintaxe: element.addEventListener(event, function);
