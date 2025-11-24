@@ -1,4 +1,5 @@
-import "./Card.css";
+/* eslint-disable react/prop-types */
+import './Card.css';
 
 const Card = ({ car }) => {
   return (
